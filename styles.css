@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    border: solid red 1px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    width: 100vw;
+    min-height: 100vh;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
+}
+
+.header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+
+}
+
+.top-bar,
+.bottom-bar {
+    display: flex;
+}
+
+.bottom-bar {
+    justify-content: space-between;
+}
+.header .greeting {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.sidebar {
+    background-color: rgb(37, 141, 197);
+    grid-row: 1 / 3;
+    color: white;
+}
+.main-content {
+    grid-column: 2 ;
+    background-color: rgb(208, 208, 208);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
+}
+
+.main-content .projects {
+    grid-row: 1 / 3;
+}
+
+.projects {
+    display: grid;
+    grid-template-rows: repeat(2, min(200px, 30%));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    padding-top: 50px;
+    position: relative;
+}
+
+.main-content .title {
+    position: absolute;
+    left: 20px;
+}
+
+.project,
+.announcement,
+.post {
+    background-color: white;
+}
+
+.announcements,
+.trending {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    padding-top: 50px;
+    position: relative;
+    gap: 20px;
+}
