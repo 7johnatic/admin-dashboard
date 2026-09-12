@@ -2,9 +2,6 @@
     box-sizing: border-box;
 }
 
-div {
-    border: solid red 1px;
-}
 
 body {
     margin: 0;
@@ -15,7 +12,7 @@ body {
     display: grid;
     width: 100vw;
     min-height: 100vh;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 7fr;
     grid-template-columns: 1fr 4fr;
 }
 
@@ -23,7 +20,6 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
-
 }
 
 .top-bar,
@@ -31,13 +27,25 @@ body {
     display: flex;
 }
 
+.top-bar {
+    background-color: blueviolet;
+}
+
+.bottom-bar {
+    background-color: brown;
+}
 .bottom-bar {
     justify-content: space-between;
+    align-items: center;
 }
 .header .greeting {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
+}
+
+.header .greeting p {
+    margin: 0;
 }
 
 .sidebar {
