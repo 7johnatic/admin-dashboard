@@ -130,8 +130,8 @@ body {
     grid-row: 1 / 5;
     grid-column: 1 / 2;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: repeat(auto-fit, min(300px, 40%));
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
     gap: 20px;
     padding: 20px;
     padding-top: 50px;
