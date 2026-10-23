@@ -21,6 +21,8 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
+    padding-top: 50px;
+    padding: 0px 30px;
 }
 
 .top-bar,
@@ -62,7 +64,8 @@ body {
     height: 28px;
 }
 
-.top-bar-icon {
+.top-bar-icon,
+.bottom-icon {
     width: 1.5em;
 }
 
@@ -189,10 +192,16 @@ body {
 .project {
     border-radius: 8px;
     padding: 24px;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgb(175, 175, 175);
 }
 
-.project {
-    background-color: white;
+.project .bottom-icons {
+    display: flex;
+    margin-top: 60px;
+    gap: 30px;
+    justify-content: right;
+    padding-right: 12px;
 }
 
 .announcements,
@@ -204,6 +213,11 @@ body {
     padding: 10px 20px;
     margin-right: 20px;
     border-radius: 16px;
+    box-shadow: 3px 3px 10px rgb(175, 175, 175);
+}
+
+.trending * {
+    
 }
 
 .post {
