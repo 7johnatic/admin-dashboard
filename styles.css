@@ -110,7 +110,6 @@ body {
     background-color: rgb(37, 141, 197);
     grid-row: 1 / 3;
     color: white;
-
     font-weight: bold;
 }
 
@@ -189,7 +188,7 @@ body {
 
 .project {
     border-radius: 8px;
-    padding: 16px 0px 0px 24px;
+    padding: 24px;
 }
 
 .project {
@@ -199,16 +198,34 @@ body {
 .announcements,
 .trending {
     background-color: white;
-    display: grid;
-    padding-left: 20px;
-    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 20px;
     margin-right: 20px;
-    position: relative;
     border-radius: 16px;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.post .title-2 {
+    margin-bottom: -10px;
+}
+
+.post-icon {
+    width: 4em;
 }
 
 .announcements {
     grid-row: 2 / 3;
+}
+
+.announcement {
+    flex: 1;
 }
 
 .trending {
